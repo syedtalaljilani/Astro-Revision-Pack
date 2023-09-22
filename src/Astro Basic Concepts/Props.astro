@@ -1,0 +1,16 @@
+---
+interface props{
+    name:String,
+    role:String,
+}
+// create a type of props
+// destruction of props
+
+const {name,role} = Astro.props;  // Astro is used to access global object in astro file
+---
+<!-- How to add props to component (child parent communication)-->
+
+<div>
+    <h1>{name}</h1>
+    <p>{role}</p>
+</div>

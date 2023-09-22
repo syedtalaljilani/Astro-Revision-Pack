@@ -1,0 +1,22 @@
+---
+import comp from './Component.astro'
+const data = ['Talal','Ahmed','Bilal']
+const visible = true;
+var myhi = 'h1'
+---
+
+<comp/>
+
+<!-- Jsx -->
+<!-- Display javascript directly in html -->
+<h1>
+    {data.map((element)=>{
+        return element;
+    })}
+</h1>
+<!-- Conditional HTML -->
+<p>{visible || <p>Show me</p>}</p>
+<p>{visible && <p>Show me</p>}</p>
+<!-- Ternary operator -->
+<p>{visible?<p>True</p>:<p>false</p>}</p>
+<myhi>My Hi</myhi>
